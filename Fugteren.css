@@ -1,0 +1,98 @@
+body {
+    width: 100%;
+    font-size: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+
+
+nav {
+    display: grid;
+    background-color: grey;
+    border-color:dimgrey;
+    border-style:outset;
+    top: 10px;
+    z-index: 100;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px auto auto auto; 
+    grid-template-areas: 
+        "nav nav nav nav"
+        "ml ml ml ml"
+        "mid mid gg gg"
+        ". . . ."
+        
+    
+    }
+.navbar {
+    grid-area: nav;
+    display: grid;
+    font-size: 25px;
+    background-color: darkslategray;
+    border-color:dimgrey;
+    border-style:outset;
+    border-width: 0px 0px 5px 0px;
+    border-radius: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  0.5fr auto; 
+    grid-template-areas:
+        ". . . ."
+        ". vd pd ."
+          
+}
+
+.vd {
+    grid-area: vd;
+    text-align: center;
+    
+}
+
+.pd {
+    grid-area: pd;
+    text-align: center;
+}
+
+.ml {
+    grid-area: ml;
+    text-align: center;
+}
+
+svg {
+    grid-area: mid;
+    color: chartreuse;
+    border: 10px;
+    border-style:outset;
+}
+
+.Fugt {
+    grid-area: gg;
+    color: chartreuse;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.pilen {
+    transform-origin: 300px center;
+}
+
+.pilen:hover {
+  animation: drej 5s;
+}
+
+@keyframes drej {
+    70%{
+        
+        transform: rotate(60deg);
+
+}
+}
